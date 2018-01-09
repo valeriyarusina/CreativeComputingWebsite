@@ -4,14 +4,13 @@ body{
   color: white;
 }
 
-#start{
+/*ONE*/
+
+#one{
+height:100%;
 }
 
-p{
-  width: 70%;
-  margin-left:10%;
-  border: solid white 7px;
-  padding: 20px;
+#start{
 }
 
 
@@ -49,5 +48,18 @@ nav ul li a:hover{
 h1{
   padding: 10% 20%;
   line-height: 100px;
-  font-size: 40px;
+  font-size: 60px;
+}
+
+#computing{
+  margin-left: 0px;
+}
+
+
+
+
+/*TWO*/
+#two{
+  background-color: white;
+  height: 600px;
 }
