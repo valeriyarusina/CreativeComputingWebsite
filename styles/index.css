@@ -1,0 +1,53 @@
+body{
+  background-color: rgb(40,44,52);
+  margin: 0px;
+  color: white;
+}
+
+#start{
+}
+
+p{
+  width: 70%;
+  margin-left:10%;
+  border: solid white 7px;
+  padding: 20px;
+}
+
+
+nav{
+  float: right;
+}
+
+nav ul{
+ list-style-type: none;
+ margin: 0px;
+ padding: 0px;
+ margin-bottom: 50px;
+ background-color: white;
+ width: 100%;
+
+
+}
+nav ul li{
+  float: left;
+  width: 24%;
+
+}
+nav ul li a{
+ font-size: 20px;
+ text-decoration: none;
+ color: white;
+ text-align: center;
+ padding: 18px 25px;
+}
+
+nav ul li a:hover{
+ color:yellow;
+}
+
+h1{
+  padding: 10% 20%;
+  line-height: 100px;
+  font-size: 40px;
+}
