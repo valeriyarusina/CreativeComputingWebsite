@@ -65,16 +65,24 @@ nav ul li a:hover{
 }
 
 h1{
-  padding: 10% 10%;
+  margin-top: 20%;
   line-height: 100px;
   font-size: 60px;
   float: left;
 }
 
+#label{
+  /*CREATIVE COMPUTING CLUB*/
+  margin-left: 10%;
+  width: 50%;
+
+}
+
 #logo{
+  /*the image*/
   margin-top: 7%;
   float: right;
-  margin-right: 12%;
+  margin-right: 15%;
   width:30%;
 }
 
