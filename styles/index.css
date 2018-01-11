@@ -93,7 +93,7 @@ nav a:hover{
 /*TWO*/
 #two{
   background-color: white;
-  height: 600px;
+  height: 500px;
 }
 
 #aboutClub{
@@ -152,4 +152,12 @@ nav a:hover{
   background-color: white;
   height:500px;
 
+}
+
+#sponsor{
+  color:black;
+  font-size: 35px;
+  line-height: 55px;
+  text-align: justify;
+  padding: 30px 170px;
 }
