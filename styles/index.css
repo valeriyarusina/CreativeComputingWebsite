@@ -16,16 +16,9 @@ h2{
   font-size: 30px;
 }
 
-p{
-  color:black;
-  font-size: 35px;
-  line-height: 55px;
-  text-align: justify;
-  padding: 30px 170px;
-}
 
 img{
-  display: block;
+  /* display: block; */
   width: 500px;
   padding: 60px;
 }
@@ -103,6 +96,14 @@ nav a:hover{
   height: 600px;
 }
 
+#aboutClub{
+  color:black;
+  font-size: 35px;
+  line-height: 55px;
+  text-align: justify;
+  padding: 30px 170px;
+}
+
 
 /*THREE*/
 #three{
@@ -111,24 +112,35 @@ nav a:hover{
 }
 
 #projects{
-  padding: 5% 0%;
+  padding: 2% 0%;
   margin-left: auto;
   margin-right: auto;
 }
 
+
+.right{
+  margin-top: 20px;  /*maybe find another way to align text with pictures on left*/
+  padding: 20px;
+  font-size: 25px;
+  line-height: 45px;
+}
+
 #project1{
   background-color: rgb(246,206,115);
-  height:600px;
+  height:620px;
+  display: flex;
 }
 
 #project2{
   background-color: rgb(31,29,42);
-  height:600px;
+  height:620px;
+  display: flex;
 }
 
 #project3{
-  background-color: pink;
-  height:600px;
+  background-color: rgb(240,128,127);
+  height:620px;
+  display: flex;
 }
 
 
@@ -137,5 +149,7 @@ nav a:hover{
 /* FOUR */
 
 #four{
+  background-color: white;
+  height:500px;
 
 }
