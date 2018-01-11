@@ -107,11 +107,35 @@ nav a:hover{
 /*THREE*/
 #three{
   background-color: white;
-  height: 1300px;
+  height: 1950px;
 }
 
 #projects{
-  padding: 5%;
+  padding: 5% 0%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#project1{
+  background-color: rgb(246,206,115);
+  height:600px;
+}
+
+#project2{
+  background-color: rgb(31,29,42);
+  height:600px;
+}
+
+#project3{
+  background-color: pink;
+  height:600px;
+}
+
+
+
+
+/* FOUR */
+
+#four{
+
 }
