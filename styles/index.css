@@ -16,6 +16,20 @@ h2{
   font-size: 30px;
 }
 
+p{
+  color:black;
+  font-size: 35px;
+  line-height: 55px;
+  text-align: justify;
+  padding: 30px 90px;
+}
+
+img{
+  display: block;
+  width: 500px;
+  padding: 60px;
+}
+
 /*ONE*/
 
 #one{
@@ -93,5 +107,11 @@ nav a:hover{
 /*THREE*/
 #three{
   background-color: white;
-  height: 600px;
+  height: 1300px;
+}
+
+#projects{
+  padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
