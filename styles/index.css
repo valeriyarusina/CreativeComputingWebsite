@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(30,30,41); /*rgb(40,44,52); */
+  /*background-color: rgb(30,30,41); /*rgb(40,44,52); */
   margin: 0px;
   color: white;
 }
@@ -10,6 +10,13 @@ h2{
   padding-top: 5%;
   text-align: center;
   font-size: 30px;
+}
+
+div{
+  clear:both;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
 
 img{
@@ -25,6 +32,7 @@ img{
   top: 0px;
   width: 100%;
   padding-bottom: 5%;
+  background-color: rgb(30,30,41);
 }
 
 nav{
@@ -81,9 +89,10 @@ nav a:hover{
 /*TWO*/
 #two{
   background-color: white;
+  margin: 0px;
 }
 
-#aboutClub{
+#two p{
   color:black;
   font-size: 35px;
   line-height: 55px;
@@ -94,7 +103,6 @@ nav a:hover{
 /*THREE*/
 #three{
   background-color: white;
-  height: 1950px;
 }
 
 #projects{
@@ -128,28 +136,21 @@ nav a:hover{
 
 #project1{
   background-color: rgb(246,206,115);
-  display: flex;
 }
 
 #project2{
   background-color: rgb(31,29,42);
-  display: flex;
 }
 
 #project3{
   background-color: rgb(240,128,127);
-  display: flex;
 }
-
-
-
 
 /* FOUR */
 
 #four{
   background-color: white;
   height:500px;
-
 }
 
 #sponsor{
