@@ -151,16 +151,27 @@ nav a:hover{
 }
 
 /* FOUR */
-
 #four{
   background-color: white;
   height:500px;
 }
 
-#sponsor{
-  color:black;
-  font-size: 35px;
-  line-height: 55px;
+
+
+/*FIVE*/
+#five{
+  background-color: white;
+  height:900px;
+}
+
+#join{
+  color: black;
+  font-size: 30px;
+  line-height: 50px;
   text-align: justify;
   padding: 30px 170px;
+}
+form{
+  color:black;
+  margin-left: 30%;
 }

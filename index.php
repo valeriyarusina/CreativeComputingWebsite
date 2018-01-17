@@ -105,8 +105,47 @@
 </div> <!-- three -->
 
 <div id="four">
-  <h2> SPONSORSHIP </h2>
-  <p id="sponsor"> Why you should become a sponsor for Big Red Gifts, and how you can help us. </p>
+  <h2> OFFICERS </h2>
+
+</div>
+
+<div id="five">
+  <h2> JOIN US </h2>
+  <p id="join"> Anyone interested in creative and innovative applications of Computer Science
+    is welcome to join our club and attend our general body meetings as well as educational
+    workshops. Just feel out the form below to stay updated with all the current club events. </p>
+
+    <div id="sign_up">    <!--Need to style it-->
+    <form name="myform" action="feedback.php" method="post" id="myform">
+      <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value= "">
+      </div>
+
+      <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value= "">
+
+      </div>
+
+      <div>
+          <label for="year">Year:</label>
+          <input type="text" id="year" name="year" value= "">
+      </div>
+
+      <div>
+          <label for="major">Major:</label>
+          <input type="text" id="major" name="major" value= "">
+      </div>
+
+
+
+     <div>
+      <button  id="submit" type="submit" name="submit">Respond</button>
+    </div>
+
+  </form>
+</div>
 </div>
 
 <!-- JavaScript-->
