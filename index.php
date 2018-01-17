@@ -116,7 +116,7 @@
     workshops. Just feel out the form below to stay updated with all the current club events. </p>
 
     <div id="sign_up">    <!--Need to style it-->
-    <form name="myform" action="feedback.php" method="post" id="myform">
+    <form name="myform" action="formsubmitted.php"  id="myform">
       <div>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" value= "">

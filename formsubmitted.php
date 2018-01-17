@@ -12,10 +12,8 @@
 
 <nav>
   <ul>
-    <li> <a href="index.html"> Home</a> </li>
-    <li> <a href="leadership.html"> Leadership</a> </li>
-    <li> <a href="projects.html"> Projects</a> </li>
-    <li> <a href="news.html"> News </a> </li>
+    <li> <a href="index.php"> Home</a> </li>
+
   </ul>
  </nav>
 
