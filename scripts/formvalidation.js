@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
 
-  var nameValid= $("#name").prop("validity").valid && $("#name").length!=0;
+  var nameValid= $("#name").length!=0;
   if(nameValid){$("#nameError").hide();}
 
     else {
@@ -36,9 +36,8 @@ $(document).ready(function() {
       validform=false;
     }
 
-
+      return validform;
     }
 
-  return validform;
+
 });
-})
