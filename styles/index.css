@@ -159,37 +159,47 @@ nav a:hover{
 
 
 /*FIVE*/
-#five{
-  background-color: white;
+#five {
+  background-color: rgb(30,30,41);
   height:900px;
 }
 
+#five h2{
+  color: white;
+}
+
 #join{
-  color: black;
+  color: white;
   font-size: 30px;
   line-height: 50px;
   text-align: justify;
   padding: 30px 170px;
 }
+
 #sign_up{
     width: 30%;
     padding: 30px 70px;
     margin-left: auto;
     margin-right: auto;
     overflow-x: hidden;
-    background-color: rgb(243,246,247);
+    background-color: rgba(128, 0, 128, 0.41);
 }
+
 form{
   color:black;
   margin-left: auto;
   margin-right: auto;
 }
+
 input{
   font-size: 20px;
   width: 100%;
   height: 40px;
   margin: 10px 0px;
-  background-color: rgb(222,222,222);
+}
+
+input:focus {
+    border: 3px solid #555;
 }
 
 #submit{
@@ -202,9 +212,13 @@ input{
 }
 
 .errorContainer{
-  color:red;
+  color: white;
 }
 
 .hiddenError{
   display: none;
+}
+
+.button{
+  text-align: center;
 }

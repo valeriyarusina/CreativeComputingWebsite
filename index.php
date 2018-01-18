@@ -222,7 +222,7 @@ else {
       </div>
 
 
-     <div>
+    <div class="button">
       <button id="submit" type="submit" name="submit">Join</button>
     </div>
 
