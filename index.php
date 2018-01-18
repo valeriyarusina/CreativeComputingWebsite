@@ -118,24 +118,20 @@
     <div id="sign_up">    <!--Need to style it-->
     <form name="myform" action="formsubmitted.php"  id="myform">
       <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" value= "">
+          <input type="text" id="name" name="name" placeholder="Full Name">
       </div>
 
       <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" value= "">
+          <input type="email" id="email" name="email" placeholder="Email">
 
       </div>
 
       <div>
-          <label for="year">Year:</label>
-          <input type="text" id="year" name="year" value= "">
+          <input type="text" id="year" name="year" placeholder="Year">
       </div>
 
       <div>
-          <label for="major">Major:</label>
-          <input type="text" id="major" name="major" value= "">
+          <input type="text" id="major" name="major" placeholder="Major">
       </div>
 
 
