@@ -1,3 +1,81 @@
+<?php
+
+// hidden error messages
+$HIDDEN_ERROR_CLASS = "hiddenError";
+
+$submit=$_REQUEST["submit"];
+
+//if the form has been submitted
+if (isset($submit)) {
+
+  //name
+  $name=$_REQUEST["name"];
+  if (!empty($name)) {
+    $nameValid = true;
+  } else {
+    $nameValid = false;
+  }
+
+  //email
+  $email = $_REQUEST["email"];
+  if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL) ) {
+    $emailValid = true;
+  } else {
+    $emailValid = false;
+  }
+
+  //Graduation Year
+  $name=$_REQUEST["year"];
+  if (!empty($year)) {
+    $yearValid = true;
+  } else {
+    $yearValid = false;
+  }
+
+  //Major
+  $name=$_REQUEST["major"];
+  if (!empty($major)) {
+    $majorValid = true;
+  } else {
+    $majorValid = false;
+  }
+
+
+  //make sure that all the inputs in the form are valid
+  $formValid = $nameValid && $emailValid && $yearValid && $majorValid;
+
+  // submit if everything is valid
+  if ($formValid) {
+    // we want to create a session to pass values to formsubmission page
+    session_start();
+    $_SESSION['name']=$name;
+    $_SESSION['email']=$email;
+    $_SESSION['year']=$year;
+    $_SESSION['major']=$major;
+
+    // redirect to formSubmitted.php
+    header("Location: formsubmitted.php");
+    return;
+  }
+}
+
+//if the form hasn't been submitted yet, everything is still valid
+ else {
+  error_log("no form submitted");
+
+  $nameValid=true;
+  $emailValid =true;
+  $check1Valid=true;
+  $check2Valid=true;
+  $check3Valid=true;
+  $check4Valid=true;
+  $dropdownValid=true;
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -116,28 +194,28 @@
     workshops. Just feel out the form below to stay updated with all the current club events. </p>
 
     <div id="sign_up">    <!--Need to style it-->
-    <form name="myform" action="formsubmitted.php"  id="myform">
+    <form name="myform" id="myform" action="formsubmitted.php" method="post" novalidate>
       <div>
-          <input type="text" id="name" name="name" placeholder="Full Name">
+          <input type="text" id="name" name="name" placeholder=" Full Name">
+          <span class="errorContainer" id="nameError"> Please Enter Your Name </span>
       </div>
 
       <div>
-          <input type="email" id="email" name="email" placeholder="Email">
+          <input type="email" id="email" name="email" placeholder=" Email">
+      </div>
+      <span class="errorContainer" id="emailError"> Invalid email </span>
 
+      <div>
+          <input type="text" id="year" name="year" placeholder=" Graduation Year">
       </div>
 
       <div>
-          <input type="text" id="year" name="year" placeholder="Year">
+          <input type="text" id="major" name="major" placeholder=" Major">
       </div>
-
-      <div>
-          <input type="text" id="major" name="major" placeholder="Major">
-      </div>
-
 
 
      <div>
-      <button  id="submit" type="submit" name="submit">Respond</button>
+      <button  id="submit" type="submit" name="submit">Join</button>
     </div>
 
   </form>
@@ -145,6 +223,7 @@
 </div>
 
 <!-- JavaScript-->
+<script src="scripts/formvalidation.js" type="text/javascript"></script>  <!--client-side validation-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
