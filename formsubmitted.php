@@ -1,22 +1,22 @@
 <?php
 	session_start();
-	$name=$_SESSION['name'];  //can be empty since it was optional
-	if ($name==""){
-		$name= "no name was provided";
+	$name = $_SESSION['name'];  //can be empty since it was optional
+	if ($name == ""){
+		$name = "no name was provided";
 	}
 	$email=$_SESSION['email'];  //can be empty since it was optional
-	if($email==""){
-		$email="no email was provided";
+	if($email == ""){
+		$email =" no email was provided";
 	}
 
   $year=$_SESSION['year'];  //can be empty since it was optional
-  if($year==""){
-    $email="no year was provided";
+  if($year == ""){
+    $email = "no year was provided";
   }
 
   $major=$_SESSION['major'];  //can be empty since it was optional
-	if($major==""){
-		$major="no major was provided";
+	if($major == ""){
+		$major = "no major was provided";
 	}
 
   unset($_SESSION['name']);
@@ -25,10 +25,6 @@
 	unset($_SESSION['major']);
 
 ?>
-
-
-
-
 
 <!DOCTYPE html>
 <html>

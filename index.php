@@ -9,7 +9,7 @@ $submit=$_REQUEST["submit"];
 if (isset($submit)) {
 
   //name
-  $name=$_REQUEST["name"];
+  $name = $_REQUEST["name"];
   if (!empty($name)) {
     $nameValid = true;
   } else {
@@ -25,7 +25,7 @@ if (isset($submit)) {
   }
 
   //Graduation Year
-  $year=$_REQUEST["year"];
+  $year = $_REQUEST["year"];
   if (!empty($year)) {
     $yearValid = true;
   } else {
@@ -33,7 +33,7 @@ if (isset($submit)) {
   }
 
   //Major
-  $major=$_REQUEST["major"];
+  $major = $_REQUEST["major"];
   if (!empty($major)) {
     $majorValid = true;
   } else {
@@ -211,7 +211,7 @@ if (isset($submit)) {
       <div>
           <input type="text" id="year" name="year" placeholder=" Graduation Year" value= "<?php echo(htmlspecialchars($year));?>" required>
           <span class="errorContainer <?php if($yearValid){ echo($HIDDEN_ERROR_CLASS);}?>" id="yearError">
-                 Please enter your year of graduation(2019,2020...)
+                 Please enter your year of graduation (2019, 2020...)
           </span>
       </div>
 
@@ -232,8 +232,8 @@ if (isset($submit)) {
 </div>
 
 <!-- JavaScript-->
-<script src="scripts/formvalidation.js" type="text/javascript"></script>  <!--client-side validation-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="scripts/formvalidation.js" type="text/javascript"></script>  <!--client-side validation-->
 <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
 <script src="scripts/scroll.js"></script>
