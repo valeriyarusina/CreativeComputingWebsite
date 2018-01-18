@@ -200,3 +200,11 @@ input{
   margin-right: auto;
   font-size: 20px;
 }
+
+.errorContainer{
+  color:red;
+}
+
+.hiddenError{
+  display: none;
+}

@@ -25,7 +25,7 @@ if (isset($submit)) {
   }
 
   //Graduation Year
-  $name=$_REQUEST["year"];
+  $year=$_REQUEST["year"];
   if (!empty($year)) {
     $yearValid = true;
   } else {
@@ -33,7 +33,7 @@ if (isset($submit)) {
   }
 
   //Major
-  $name=$_REQUEST["major"];
+  $major=$_REQUEST["major"];
   if (!empty($major)) {
     $majorValid = true;
   } else {
@@ -65,11 +65,8 @@ if (isset($submit)) {
 
   $nameValid=true;
   $emailValid =true;
-  $check1Valid=true;
-  $check2Valid=true;
-  $check3Valid=true;
-  $check4Valid=true;
-  $dropdownValid=true;
+  $yearValid=true;
+  $majorValid=true;
 }
 ?>
 
@@ -192,26 +189,37 @@ if (isset($submit)) {
   <h2> JOIN US </h2>
   <p id="join"> Anyone interested in creative and innovative applications of Computer Science
     is welcome to join our club and attend our general body meetings as well as educational
-    workshops. Just feel out the form below to stay updated with all the current club events. </p>
+    workshops. Just feel out the form below to stay updated with all the current club events.
+  </p>
 
     <div id="sign_up">    <!--Need to style it-->
     <form name="myform" id="myform" action="formsubmitted.php" method="post" novalidate>
       <div>
-          <input type="text" id="name" name="name" placeholder=" Full Name">
-          <span class="errorContainer" id="nameError"> Please Enter Your Name </span>
+          <input type="text" id="name" name="name" placeholder=" Full Name" value= "<?php echo(htmlspecialchars($name));?>" required>
+          <span class="errorContainer <?php if($nameValid){ echo($HIDDEN_ERROR_CLASS);}?>" id="nameError">
+                   Please enter your name
+            </span>
       </div>
 
       <div>
-          <input type="email" id="email" name="email" placeholder=" Email">
-      </div>
-      <span class="errorContainer" id="emailError"> Invalid email </span>
-
-      <div>
-          <input type="text" id="year" name="year" placeholder=" Graduation Year">
+          <input type="email" id="email" name="email" placeholder=" Email" value= "<?php echo(htmlspecialchars($email));?>" required>
+          <span class="errorContainer <?php if($emailValid){ echo($HIDDEN_ERROR_CLASS);}?>" id="emailError">
+                 Invalid email
+          </span>
       </div>
 
       <div>
-          <input type="text" id="major" name="major" placeholder=" Major">
+          <input type="text" id="year" name="year" placeholder=" Graduation Year" value= "<?php echo(htmlspecialchars($year));?>" required>
+          <span class="errorContainer <?php if($yearValid){ echo($HIDDEN_ERROR_CLASS);}?>" id="yearError">
+                 Please enter your year of graduation(2019,2020...)
+          </span>
+      </div>
+
+      <div>
+          <input type="text" id="major" name="major" placeholder=" Major" value= "<?php echo(htmlspecialchars($major));?>" required>
+          <span class="errorContainer <?php if($majorValid){ echo($HIDDEN_ERROR_CLASS);}?>" id="majorError">
+                 Please enter your major
+          </span>
       </div>
 
 

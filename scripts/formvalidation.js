@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
 
-  var nameValid= $("#name").prop("validity").valid || $("#name").length!=0;
+  var nameValid= $("#name").prop("validity").valid && $("#name").length!=0;
   if(nameValid){$("#nameError").hide();}
 
     else {
@@ -15,7 +15,7 @@ $(document).ready(function() {
       validform=false;
     }
 
-    var emailValid= $("#email").prop("validity").valid || $("#email").length!=0;
+    var emailValid= $("#email").prop("validity").valid && $("#email").length!=0;
     if(emailValid){ $("#emailError").hide();}
 
       else {
