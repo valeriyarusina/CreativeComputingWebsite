@@ -2,8 +2,7 @@
 
 // hidden error messages
 $HIDDEN_ERROR_CLASS = "hiddenError";
-
-$submit=$_REQUEST["submit"];
+$submit = $_REQUEST["submit"];
 
 //if the form has been submitted
 if (isset($submit)) {
@@ -18,7 +17,7 @@ if (isset($submit)) {
 
   //email
   $email = $_REQUEST["email"];
-  if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL) ) {
+  if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $emailValid = true;
   } else {
     $emailValid = false;
@@ -26,7 +25,7 @@ if (isset($submit)) {
 
   //Graduation Year
   $year = $_REQUEST["year"];
-  if (!empty($year)) {
+  if (!empty($year) && strlen($year) == 4) {
     $yearValid = true;
   } else {
     $yearValid = false;
@@ -48,10 +47,10 @@ if (isset($submit)) {
   if ($formValid) {
     // we want to create a session to pass values to formsubmission page
     session_start();
-    $_SESSION['name']=$name;
-    $_SESSION['email']=$email;
-    $_SESSION['year']=$year;
-    $_SESSION['major']=$major;
+    $_SESSION["name"] = $name;
+    $_SESSION["email"] = $email;
+    $_SESSION["year"] = $year;
+    $_SESSION["major"] = $major;
 
     // redirect to formSubmitted.php
     header("Location: formsubmitted.php");
@@ -60,18 +59,13 @@ if (isset($submit)) {
 }
 
 //if the form hasn't been submitted yet, everything is still valid
- else {
-  error_log("no form submitted");
-
-  $nameValid=true;
-  $emailValid =true;
-  $yearValid=true;
-  $majorValid=true;
+else {
+  $nameValid = true;
+  $emailValid = true;
+  $yearValid = true;
+  $majorValid = true;
 }
 ?>
-
-
-
 
 
 <!DOCTYPE html>
@@ -193,7 +187,9 @@ if (isset($submit)) {
   </p>
 
     <div id="sign_up">    <!--Need to style it-->
-    <form name="myform" id="myform" action="formsubmitted.php" method="post" novalidate>
+    <form name="myform" id="myform" action="#five" method="post" novalidate>
+
+      <!-- name -->
       <div>
           <input type="text" id="name" name="name" placeholder=" Full Name" value= "<?php echo(htmlspecialchars($name));?>" required>
           <span class="errorContainer <?php if($nameValid){ echo($HIDDEN_ERROR_CLASS);}?>" id="nameError">
@@ -201,13 +197,15 @@ if (isset($submit)) {
             </span>
       </div>
 
+      <!-- email -->
       <div>
-          <input type="email" id="email" name="email" placeholder=" Email" value= "<?php echo(htmlspecialchars($email));?>" required>
+          <input type="email" id="email" name="email" placeholder=" Email (netID)" value= "<?php echo(htmlspecialchars($email));?>" required>
           <span class="errorContainer <?php if($emailValid){ echo($HIDDEN_ERROR_CLASS);}?>" id="emailError">
-                 Invalid email
+                 Invalid email (Please enter netID@cornell.edu)
           </span>
       </div>
 
+      <!-- year -->
       <div>
           <input type="text" id="year" name="year" placeholder=" Graduation Year" value= "<?php echo(htmlspecialchars($year));?>" required>
           <span class="errorContainer <?php if($yearValid){ echo($HIDDEN_ERROR_CLASS);}?>" id="yearError">
@@ -215,6 +213,7 @@ if (isset($submit)) {
           </span>
       </div>
 
+      <!-- major -->
       <div>
           <input type="text" id="major" name="major" placeholder=" Major" value= "<?php echo(htmlspecialchars($major));?>" required>
           <span class="errorContainer <?php if($majorValid){ echo($HIDDEN_ERROR_CLASS);}?>" id="majorError">
@@ -224,7 +223,7 @@ if (isset($submit)) {
 
 
      <div>
-      <button  id="submit" type="submit" name="submit">Join</button>
+      <button id="submit" type="submit" name="submit">Join</button>
     </div>
 
   </form>

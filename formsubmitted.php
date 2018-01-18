@@ -1,28 +1,29 @@
 <?php
 	session_start();
-	$name = $_SESSION['name'];  //can be empty since it was optional
-	if ($name == ""){
+	$submit = $_REQUEST["submit"];
+	$name = $_SESSION["name"];  //can be empty since it was optional
+	/*if ($name == ""){
 		$name = "no name was provided";
-	}
-	$email=$_SESSION['email'];  //can be empty since it was optional
+	} */
+	$email = $_SESSION["email"];  //can be empty since it was optional
 	if($email == ""){
-		$email =" no email was provided";
+		$email = "no email was provided";
 	}
 
-  $year=$_SESSION['year'];  //can be empty since it was optional
+  $year = $_SESSION["year"];  //can be empty since it was optional
   if($year == ""){
-    $email = "no year was provided";
+    $year = "no year was provided";
   }
 
-  $major=$_SESSION['major'];  //can be empty since it was optional
+  $major = $_SESSION["major"];  //can be empty since it was optional
 	if($major == ""){
 		$major = "no major was provided";
 	}
 
-  unset($_SESSION['name']);
-	unset($_SESSION['email']);
-	unset($_SESSION['year']);
-	unset($_SESSION['major']);
+  unset($_SESSION["name"]);
+	unset($_SESSION["email"]);
+	unset($_SESSION["year"]);
+	unset($_SESSION["major"]);
 
 ?>
 
@@ -45,11 +46,11 @@
   </ul>
  </nav>
 
-<p> YAAAy, You submitted the form!!! Here is all the information: <br/>
-  Name: <?php echo(htmlspecialchars($name) );?>        <br/>
-  Email: <?php echo(htmlspecialchars($email) );?>.   <br/>
-  Year: <?php echo(htmlspecialchars($year) );?>.   <br/>
-  Major: <?php echo(htmlspecialchars($major) );?>.   <br/>
+<p> YAAAY, You submitted the form!!! Here is the information you have provided: <br/>
+  Name: <?php echo(htmlspecialchars($name));?>        <br/>
+  Email: <?php echo(htmlspecialchars($email));?>   <br/>
+  Year: <?php echo(htmlspecialchars($year));?>   <br/>
+  Major: <?php echo(htmlspecialchars($major));?>  <br/>
 
 </p>
 
