@@ -177,6 +177,37 @@ else {
 <div id="four">
   <h2> OFFICERS </h2>
 
+  <div class="grid">
+    <div class="row1">
+      <div class="officer">
+        <p> Michael Lucido <br/> President </p>
+      </div>
+
+      <div class="officer">
+        <p> Serge-Oliver Amega <br/> Vice President </p>
+      </div>
+
+      <div class="officer">
+        <p> Kee Hoon Lee <br/> GBODY Director </p>
+      </div>
+    </div>
+
+    <div class="row2">
+      <div class="officer">
+        <p> Valeriya Rusina <br/> Treasurer/Marketing Director </p>
+      </div>
+
+      <div class="officer">
+        <p> Chris Umeki <br/> Social/Marketing Director </p>
+      </div>
+
+      <div class="officer">
+        <p> Mena Wang <br/> Art/Design Director </p>
+      </div>
+    </div>
+
+  </div>
+
 </div>
 
 <div id="five">

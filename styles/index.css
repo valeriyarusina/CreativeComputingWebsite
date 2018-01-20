@@ -153,10 +153,35 @@ nav a:hover{
 /* FOUR */
 #four{
   background-color: white;
-  height:800px;
 }
 
+#four p{
+  color: black;
+  text-align: center;
+}
 
+.grid{
+  display: flex;
+  flex-direction: column;
+}
+
+.row1{
+  flex: 1;
+  order: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.row2{
+  flex: 1;
+  order: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.officer{
+  flex: 1;
+}
 
 /*FIVE*/
 #five {
