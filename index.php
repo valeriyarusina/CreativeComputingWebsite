@@ -181,28 +181,40 @@ else {
   <div class="grid">
     <div class="row1">
       <div class="officer">
+        <img src="images/officer.jpg" alt="club officer"/>
+        <!--source:https://pixabay.com/en/icon-people-person-team-human-931551/-->
         <p> Michael Lucido <br/> President </p>
       </div>
 
       <div class="officer">
+        <img src="images/officer.jpg" alt="club officer"/>
+        <!--source:https://pixabay.com/en/icon-people-person-team-human-931551/-->
         <p> Serge-Oliver Amega <br/> Vice President </p>
       </div>
 
       <div class="officer">
+        <img src="images/officer.jpg" alt="club officer"/>
+        <!--source:https://pixabay.com/en/icon-people-person-team-human-931551/-->
         <p> Kee Hoon Lee <br/> GBODY Director </p>
       </div>
     </div>
 
     <div class="row2">
       <div class="officer">
+        <img src="images/officer.jpg" alt="club officer"/>
+        <!--source:https://pixabay.com/en/icon-people-person-team-human-931551/-->
         <p> Valeriya Rusina <br/> Treasurer/Marketing Director </p>
       </div>
 
       <div class="officer">
+        <img src="images/officer.jpg" alt="club officer"/>
+        <!--source:https://pixabay.com/en/icon-people-person-team-human-931551/-->
         <p> Chris Umeki <br/> Social/Marketing Director </p>
       </div>
 
       <div class="officer">
+        <img src="images/officer.jpg" alt="club officer"/>
+        <!--source:https://pixabay.com/en/icon-people-person-team-human-931551/-->
         <p> Mena Wang <br/> Art/Design Director </p>
       </div>
     </div>
