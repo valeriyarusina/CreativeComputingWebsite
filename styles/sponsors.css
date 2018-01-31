@@ -22,22 +22,35 @@ div{
 }
 
 #nav2{
-  font-size: 25px;
+  font-size: 35px;
   margin: 0px;
   padding: 20px;
 }
 #nav2 a{
   text-decoration:none;
   color: white;
-  margin-left: 98%;
+  margin-left: 97%;
 }
 
 #nav2 a:hover{
   color: yellow;
 }
 #logo{
-  width: 40%;
+  width:25%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #logo img{
   width: 100%;
+}
+
+#reasons{
+
+}
+
+p{
+  font-size: 30px;
+  line-height: 40px;
+  padding: 2% 17%;
+  text-align: justify;
 }
