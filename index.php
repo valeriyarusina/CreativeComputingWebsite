@@ -81,6 +81,7 @@ else {
 <div id="one">
 
   <nav class="nav">
+    <a href="sponsors.html">SPONSORS</a>
     <a href="#two">ABOUT</a>
     <a href="#three">PROJECTS</a>
     <a href="#four">OFFICERS</a>
@@ -264,7 +265,7 @@ else {
 <!-- JavaScript-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="scripts/formvalidation.js" type="text/javascript"></script>  <!--client-side validation-->
-<!-- <script src="scripts/connectToForm.js"></script> <!-- connect to form --> 
+<!-- <script src="scripts/connectToForm.js"></script> <!-- connect to form -->
 <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
 <script src="scripts/scroll.js"></script>
