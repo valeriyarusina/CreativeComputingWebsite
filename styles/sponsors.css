@@ -51,6 +51,7 @@ div{
 p{
   font-size: 30px;
   line-height: 40px;
-  padding: 1% 16% 5% 16%;
+  padding-left: 16%;
+  padding-right: 16%; 
   text-align: justify;
 }
