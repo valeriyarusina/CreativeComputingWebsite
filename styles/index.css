@@ -74,14 +74,15 @@ nav a:hover{
  color:yellow;
 }
 
+/* TITLE BLOCK */
 .title{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-content: center;
 }
 
-/*CREATIVE COMPUTING CLUB*/
 .label{
   flex: 1;
 }
@@ -99,8 +100,6 @@ nav a:hover{
 /*the image*/
 .logo img{
   width: 60%;
-  margin-top: 5%;
-  margin-left: 10%;
 }
 
 #computing{
