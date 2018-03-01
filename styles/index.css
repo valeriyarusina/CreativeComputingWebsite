@@ -1,19 +1,3 @@
-@media (min-width: 1200px) { 
-  body {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-
-@media (min-width: 1800px) { 
-  body {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-
-
 body{
   /*background-color: rgb(30,30,41); /*rgb(40,44,52); */
   color: white;
@@ -35,7 +19,6 @@ h3{
 div{
   clear:both;
   margin: 0px;
-  padding: 0px;
   border: 0px;
 }
 
@@ -171,7 +154,6 @@ nav a:hover{
   background-color: white;
   width: 100%;
   margin-bottom: 70px;
-
 }
 
 #four p{
@@ -182,6 +164,7 @@ nav a:hover{
 .grid{
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .row1{
@@ -239,5 +222,58 @@ nav a:hover{
 }
 
 #sign_up a:hover{
-  background-color: rgb(128,0,128); 
+  background-color: rgb(128,0,128);
+}
+
+@media (max-width: 800px){
+
+  #two p {
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+
+  #join{
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  div h3 {
+    text-align: center;
+  }
+
+  .project_section{
+    display: block;
+  }
+
+  .left{
+    display: block;
+    text-align: center;
+  }
+
+  .left img{
+    width: 70%; /* can play around with this */
+  }
+
+  .right{
+    display: block;
+    margin-top: 0px;  /*maybe find another way to align text with pictures on left*/
+    padding: 25px;
+    font-size: 20px;
+    text-align: justify; 
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+}
+
+@media (max-width: 1800px) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
